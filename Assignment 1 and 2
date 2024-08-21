@@ -1,0 +1,24 @@
+ASSIGNMENT 1
+
+Problem Statement (1-2 weeks):
+The process begins with recognizing the need for a shopping cart system in an online store. This need is clearly defined as the project's primary goal. Stakeholders gather to discuss initial requirements, outlining the basic functionalities the system should have and the problems it aims to solve for both the business and its customers. This stage typically takes 1-2 weeks, allowing time for thorough analysis and stakeholder alignment.
+
+
+Service Layer (2-3 weeks):
+In this stage, the focus shifts to planning the system's architecture. The team designs the user interaction flow, mapping out how customers will navigate through the shopping experience. They also plan the data flow, determining how information will move between different parts of the system. Finally, they select appropriate communication protocols to ensure efficient and secure data transfer. This phase usually spans 2-3 weeks.
+Tech Stack: The team decides to use a modern, scalable tech stack:
+Front-end: React.js with Redux for state management
+Back-end: Node.js with Express.js framework
+Database: MongoDB for flexible, document-based storage
+API: RESTful API design
+Authentication: JSON Web Tokens (JWT)
+Version Control: Git with GitHub for collaboration
+
+Development Stages (10-14 weeks):
+The development process unfolds in several phases. It starts with detailed planning (1-2 weeks), where requirements are thoroughly analyzed and the technology stack is finalized. Next comes the design phase (2-3 weeks), where the user interface and database structure are created. The implementation phase (4-6 weeks) sees the actual coding of front-end and back-end components. In the integration phase (1-2 weeks), these components are brought together. Rigorous testing follows (2-3 weeks) to ensure all parts work correctly both individually and as a whole. The process concludes with a refinement phase (1-2 weeks), where the team fixes bugs and optimizes performance based on test results.
+
+Published Stage (Ongoing):
+Once development is complete, the system moves to deployment, which typically takes about 1 week. The production environment is set up, and the application is moved to live servers. A soft launch to a limited user group may precede the full public launch, lasting about 1-2 weeks. After launch, the focus shifts to ongoing maintenance and evolution. The team continuously monitors the system's performance, releases regular updates, and incorporates user feedback to improve the shopping cart's functionality and user experience over time. This stage is ongoing, with regular maintenance cycles and potential feature updates every few months.
+Total estimated duration from problem statement to initial public launch: 14-21 weeks (3.5-5 months), with ongoing maintenance and improvements thereafter.
+
+ASSIGNMENT 2
