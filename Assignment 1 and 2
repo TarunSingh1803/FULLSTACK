@@ -1,30 +1,64 @@
-ASSIGNMENT 1
+ASSIGNMENT 1: An online store requires a shopping cart system. This becomes our project's goal.
 
-Problem Statement (1-2 weeks):
-The process begins with recognizing the need for a shopping cart system in an online store. This need is clearly defined as the project's primary goal. Stakeholders gather to discuss initial requirements, outlining the basic functionalities the system should have and the problems it aims to solve for both the business and its customers. This stage typically takes 1-2 weeks, allowing time for thorough analysis and stakeholder alignment.
+Problem Statement (1-2 weeks): The process begins with recognizing the need for a shopping cart system in an online store.This need is clearly defined as the project's primary goal. 
+Stakeholders gather to discuss initial requirements, outlining the basic functionalities the system should have and the problems it aims to solve for both the business and its customers. 
+This stage typically takes 1-2 weeks, allowing time for thorough analysis and stakeholder alignment.
 
+Service Layer (2-3 weeks): In this stage, the focus shifts to planning the system's architecture. The team designs the user interaction flow, mapping out how customers will navigate through the shopping experience. 
+They also plan the data flow, determining how information will move between different parts of the system.
+Finally, they select appropriate communication protocols to ensure efficient and secure data transfer. This phase usually spans 2-3 weeks.
 
-Service Layer (2-3 weeks):
-In this stage, the focus shifts to planning the system's architecture. The team designs the user interaction flow, mapping out how customers will navigate through the shopping experience. They also plan the data flow, determining how information will move between different parts of the system. Finally, they select appropriate communication protocols to ensure efficient and secure data transfer. This phase usually spans 2-3 weeks.
-Tech Stack: The team decides to use a modern, scalable tech stack:
-Front-end: React.js with Redux for state management
-Back-end: Node.js with Express.js framework
-Database: MongoDB for flexible, document-based storage
-API: RESTful API design
-Authentication: JSON Web Tokens (JWT)
-Version Control: Git with GitHub for collaboration
+  Tech Stack: The team decides to use a modern, scalable tech stack:
+  Front-end: React.js with Redux for state management
+  Back-end: Node.js with Express.js framework
+  Database: MongoDB for flexible, document-based storage
+  API: RESTful API design
+  Authentication: JSON Web Tokens (JWT)
+  Version Control: Git with GitHub for collaboration
 
-Development Stages (10-14 weeks):
-The development process unfolds in several phases. It starts with detailed planning (1-2 weeks), where requirements are thoroughly analyzed and the technology stack is finalized. Next comes the design phase (2-3 weeks), where the user interface and database structure are created. The implementation phase (4-6 weeks) sees the actual coding of front-end and back-end components. In the integration phase (1-2 weeks), these components are brought together. Rigorous testing follows (2-3 weeks) to ensure all parts work correctly both individually and as a whole. The process concludes with a refinement phase (1-2 weeks), where the team fixes bugs and optimizes performance based on test results.
+Development Stages (10-14 weeks): The development process unfolds in several phases. It starts with detailed planning (1-2 weeks), where requirements are thoroughly analyzed and the technology stack is finalized.
+Next comes the design phase (2-3 weeks), where the user interface and database structure are created. The implementation phase (4-6 weeks) sees the actual coding of front-end and back-end components. In the integration phase (1-2 weeks), these components are brought together. 
+Rigorous testing follows (2-3 weeks) to ensure all parts work correctly both individually and as a whole. The process concludes with a refinement phase (1-2 weeks), where the team fixes bugs and optimizes performance based on test results.
 
-Published Stage (Ongoing):
-Once development is complete, the system moves to deployment, which typically takes about 1 week. The production environment is set up, and the application is moved to live servers. A soft launch to a limited user group may precede the full public launch, lasting about 1-2 weeks. After launch, the focus shifts to ongoing maintenance and evolution. The team continuously monitors the system's performance, releases regular updates, and incorporates user feedback to improve the shopping cart's functionality and user experience over time. This stage is ongoing, with regular maintenance cycles and potential feature updates every few months.
+Published Stage (Ongoing): Once development is complete, the system moves to deployment, which typically takes about 1 week. The production environment is set up, and the application is moved to live servers. 
+A soft launch to a limited user group may precede the full public launch, lasting about 1-2 weeks. After launch, the focus shifts to ongoing maintenance and evolution. 
+The team continuously monitors the system's performance, releases regular updates, and incorporates user feedback to improve the shopping cart's functionality and user experience over time. This stage is ongoing, with regular maintenance cycles and potential feature updates every few months.
 Total estimated duration from problem statement to initial public launch: 14-21 weeks (3.5-5 months), with ongoing maintenance and improvements thereafter.
 
 Mind map:
 https://files.mymap.ai/exports/vozLNXpHhI1bn/Ky9NU6d4DoNxug7YcUkrf.png
 
-ASSIGNMENT 2:
 
-What data we can store in shopping cart?
 
+ASSIGNMENT 2: What data will you store in the shopping cart?
+
+User ID: Uniquely identifies the user who owns the cart, whether it's a registered user or a guest with a session ID.
+
+Cart ID: A distinct identifier for the shopping cart itself.
+
+Products/Items: 1. Product ID: A unique identifier for each product added to the cart.
+                2. Product Name: The name of the product.
+                3. Quantity: The number of units the user intends to purchase.
+                4. Price: The price per unit at the time the product was added to the cart.
+                4. Total Price: The total cost for each product (calculated as quantity × price).
+                6. Product Options: Any selected variations, such as size, color, or other attributes.
+
+Timestamps: 1. Date Added: The date and time when the product was added to the cart.
+            2. Last Updated: The most recent date and time when the cart or a product within it was modified.
+
+Availability Status: Indicates whether the item is in stock, out of stock, or available for backorder.
+
+Discounts/Promotions: 1. Discount Code: Any promotional codes applied to the cart.
+                      2. Discount Amount: The discount applied to each product or the total cart value.
+
+Subtotal: The total cost of all items in the cart before taxes, shipping fees, and discounts.
+
+Shipping Information: 1. Shipping Method: The selected shipping option, such as standard or express delivery.
+                      2. Shipping Cost: The fee associated with the chosen shipping method.
+
+Tax Information: 1. Tax Rate: The applicable tax rate based on the user’s location.
+                 2.Tax Amount: The calculated tax for the items in the cart.
+ 
+Session Information (if applicable): Details related to the user's session, such as the session ID and its expiration time.
+
+This data ensures that the shopping cart accurately reflects the user's selections and preferences, even if they leave the site and return later.
